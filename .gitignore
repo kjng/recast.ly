@@ -10,3 +10,7 @@ compiled/
 ## API keys ##
 src/config/youtube.js
 compiled/config/youtube.js
+
+## floobits ##
+.floo
+.flooignore
