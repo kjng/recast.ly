@@ -2,11 +2,11 @@ var searchObject = {
   max: 5,
   key: YOUTUBE_API_KEY,
   query: 'react'
-}
+};
 
 var searchYouTube = (options, callback) => {
 
-   $.ajax({
+  $.ajax({
     data: {
       part: 'snippet,id',
       type: 'video',

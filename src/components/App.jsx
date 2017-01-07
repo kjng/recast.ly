@@ -2,9 +2,20 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      availableVideos: exampleVideoData,
-      currentVideo: exampleVideoData[0]
+      availableVideos: [],
+      currentVideo: {},
     };
+  }
+
+  componentDidMount() {
+    this.props.searchYouTube(searchObject, this.updateVideos.bind(this));
+  }
+
+  updateVideos(data) {
+    this.setState({
+      availableVideos: data,
+      currentVideo: data[0],
+    });
   }
 
   render() {
