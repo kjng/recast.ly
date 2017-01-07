@@ -27,10 +27,16 @@ class App extends React.Component {
           <VideoPlayer video={this.state.currentVideo} />
         </div>
         <div className="col-md-5">
-          <VideoList videos={this.state.availableVideos} />
+          <VideoList videos={this.state.availableVideos} onClick={this.onVideoListEntryClick.bind(this)} />
         </div>
       </div>
     );
+  }
+
+  onVideoListEntryClick(video) {
+    this.setState({
+      currentVideo: video
+    });
   }
 }
 
