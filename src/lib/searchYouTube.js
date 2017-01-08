@@ -31,6 +31,3 @@ var searchYouTube = (options, callback) => {
 
 window.searchYouTube = searchYouTube;
 window.searchObject = searchObject;
-
-//options object: expected input to search
-  //callback =
