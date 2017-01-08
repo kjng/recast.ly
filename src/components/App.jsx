@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Nav />
+        <Nav updateVideos={this.updateVideos.bind(this)} searchYouTube={this.props.searchYouTube} />
         <div className="col-md-7">
           <VideoPlayer video={this.state.currentVideo} />
         </div>
